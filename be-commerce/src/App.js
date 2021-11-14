@@ -1,25 +1,47 @@
 import logo from './logo.svg';
 import './App.css';
+import { Componente1 } from './Components/Basico/Componente1';
+import NavBar from './Components/NavBarr/NavBar';
+import ItemListContainer from './Components/ItemList/ItemListContainer';
+
+
 
 function App() {
+
+  let condition = 'verdadero'
+  let resultado = ''
+  
+  console.log(`El resultado es ${condition==='verdadero' ? 'correcto' : 'incorrecto'}`)
+  
+  
+  //Objeto style
+      const style = {backgroundColor: '#00aae4',
+                      borderColor: 'red'
+                      }
+  
+  
+      const handlerOnClick = ()=>{
+          console.log('saludar')
+          console.log('despedir')
+                     }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+   <>
+            <Componente1/>
+            <NavBar/>
+            <ItemListContainer/>
+           
+
+      <div className="App" style={ style } onClick={handlerOnClick}> 
+          Este es un componente App
+          <img alt=''></img>
+          <img alt='' />
+          <input /> 
+      </div>
+      </>
+      
+       );
+
+  }
 
 export default App;
