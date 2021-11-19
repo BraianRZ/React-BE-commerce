@@ -2,22 +2,28 @@ import React from "react";
 
 function NavBar() {
     return (
-        <nav>
-            <button>
+        <nav className="NB">
+            <button className="BT">
             <p> Tensiómetros  </p>
             </button>
-            <button>
+            <button className="BT">
             <p> Termómetros </p>
             </button>
-            <button>
+            <button className="BT">
             <p> Oxímetros </p>
             </button>
-            <button>
+            <button className="BT">
             <p> Martillo de Reflejos </p>
             </button>
-        </nav>
+
+            <cartWidget/>
+            
+        </nav> 
+
         
     )
 }
 
 export default NavBar
+
+
