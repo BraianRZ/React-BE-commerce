@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-                                                                        /* COMPONENTES */
+                                                                        /* INICIO de COMPONENTES */
 
       /* NavBar */
 /* Comienzo de estilo */
@@ -30,7 +30,7 @@
 /* Fin de estilo */
 
 
-   /* Componente1 */
+   /* Componente 1 */
 /* Comienzo de estilo */
 
 .Comp1 {
@@ -42,11 +42,23 @@
 
 /* Fin de estilo */
 
-    /* Componente2 */
+    /* Componente 2 */
 /* Comienzo de estilo */
 
 .Comp2 {
   color: #61dafb;
+}
+
+/* Fin de estilo */
+
+
+  /* Componente 3 */
+/* Comienzo de estilo */
+
+CartWidget svg {
+  text-align: center;
+  align-items: center;
+  align-content: center;
 }
 
 /* Fin de estilo */
@@ -128,7 +140,21 @@
   text-align: center;
 }
 
-.Comp1 h2{
+                                                                           /* FIN DE COMPONENTES */
+
+                                                                        /* Inicio de PROPIEDADES */
+
+
+
+.Prop1 {
   text-align: center;
 }
 
+
+
+                                                                          /* Fin de PROPIEDADES */
+
+
+.imagen1 {
+  size: 1px;
+}                                                                          

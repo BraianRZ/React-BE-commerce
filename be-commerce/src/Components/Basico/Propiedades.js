@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Propiedades (props) {
     return (
-        <div>
+        <div className="Prop1">
         <h2>Bienvenidos al mundo de ReactJS</h2>
         <div/>
         <h3>{props.porDefecto}</h3>
