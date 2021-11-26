@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import { Componente1 } from './Components/Basico/Componente1';
 import NavBar from './Components/NavBarr/NavBar';
-import ItemListContainer from './Components/ItemList/ItemListContainer';
 import Propiedades from './Components/Basico/Propiedades';
 import { Componente2 } from './Components/Basico/Componente2';
 import ItemListContainer1 from './Components/ItemListContainer1';
@@ -14,13 +13,18 @@ import imagenes from './img/imagenes';
 import { Form } from 'react-bootstrap';
 import Boton from './Components/Basico/Boton';
 import Item from './Components/ItemList/Item';
+import { BrowserRouter as Router, Switch, Route, Routes} from "react-router-dom";
  
 
+
 const products = [
-  { id: 1,foto:'./img/ter1.jpg'}
-  { id: 2,foto:'./img/ter2.jpg'}
-  { id: 3,foto:'./img/ter3.jpg'}
-];
+  { id: 1, foto:'./img/ter1.jpg'},
+  { id: 2, foto:'./img/ter2.jpg'},
+  { id: 3, foto:'./img/ter3.jpg'},
+]; 
+
+
+
 
 const getFetch = new Promise((aceptado,rachazada)=>{
   setTimeout(() => {
@@ -95,7 +99,7 @@ function App() {
              />
             <NavBar/>
             <hr/>
-            <ItemListContainer/>
+            
             <hr/>
             <Item/>
             <div>

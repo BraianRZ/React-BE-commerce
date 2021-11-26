@@ -1,27 +1,33 @@
-import Item from './Item'
+import React from 'react';
+import ItemCount from '../ItemList/ItemCount';
+import { Link } from 'react-router-dom';
 
-const products = [
-    {id: '1', name: 'Tensiometro', description  '', stock: 5},
-    {id: '2', name: 'Termometro', description '', stock: 1},
-    {id: '3', name: 'Oximetro', description '', stock: 2},
-];
 
-const fetchProducts = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        
-        if (products.length > 0) {
-            resolve(products);
 
-        } else {
-            reject('No hay Stock');
-        }
-    }, 2000);
-});
+export default function Item({item}) {
 
-fetchProducts
-    .then((products) => {
-        console.log(products);
-    }) 
-    .catch((err) => console.log(err));
+//el componente Item es de presentación, su responsabilidad va a ser la de presentar la información en pantalla. 
+//RECUERDEN: ItemListContainer solo tiene la responsabilidad de la promesa o fetch a una API, la info que recolecta se la pasa a ItemList, que solo tiene la responsabilidad de mapear ese Array de productos y pasarle cada objeto producto al componente que lo va a mostrar en pantalla (Item).
 
-    export default Item
+    console.log('este es el prop de item' + item)
+    console.log(item)
+
+    return (
+            <li key={'item.id'}>
+                <div>
+                    <div>
+                        <Link to={'/item/${item.id}'}>
+                        <img src={'item.pictureURL'} alt={'item.title'} />
+                        </Link>
+                    </div>
+                    <div>
+                        <h3>{'item.title'}</h3>
+                        <p>{'item.description'}</p>
+                        <p>{'item.price'}</p>
+                        <ItemCount stock={'item.stock'} id={'item.id'} />
+                    </div>'
+                </div> 
+            </li>
+            )
+    
+}
