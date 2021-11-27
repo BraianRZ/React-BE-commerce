@@ -1,7 +1,7 @@
 /* Utilizando destructuring */
 import {Navbar, container, Nav, navbarDropdown} from 'react-bootstrap'
 import CartWidget from './CartWidget'
-import cartWidget from './CartWidget'
+import { Link } from 'react-router-dom';
 
 function NavBar1() {
     return (

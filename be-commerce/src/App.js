@@ -13,7 +13,9 @@ import imagenes from './img/imagenes';
 import { Form } from 'react-bootstrap';
 import Boton from './Components/Basico/Boton';
 import Item from './Components/ItemList/Item';
-import { BrowserRouter as Router, Switch, Route, Routes} from "react-router-dom";
+import { Link } from 'react-router-dom';
+
+
  
 
 
